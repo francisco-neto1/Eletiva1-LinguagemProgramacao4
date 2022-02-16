@@ -5,7 +5,15 @@
         <meta charset="utf-8">
         <link href="Style.css" rel="stylesheet">
         <style>
-            body{background:white}
+            body{
+                background:white
+            }
+            .estilo-campos{
+                background: rgb(224, 2, 124);
+            }
+            #descricao{
+                background: rgb(247, 9, 207);
+            }
         </style>
     </head>
 
@@ -61,9 +69,9 @@
 
                 <form action="" method="">
                     <label for="nome">Insira seu nome:</label>
-                    <input type="text" name="nome" id="nome"/>
+                    <input type="text" name="nome" id="nome" class="estilo-campos"/>
                     <label for="email">Insira seu email</label>
-                    <input type="email" name="email" id="email"/>
+                    <input type="email" name="email" id="email" class="estilo-campos"/>
                     <label for="descricao">Fale Sobre Voce:</label>
                     <textarea name="descricao" id="descricao"></textarea>
                     <label for="estado">Informe seu estado</label>
