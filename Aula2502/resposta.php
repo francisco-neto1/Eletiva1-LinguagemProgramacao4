@@ -47,6 +47,8 @@
             echo "O número ".$valor2." é ímpar.";
         }
         
+        for($i = 0; $i < 10 ; $i++)
+        echo "valor1";
     ?>
 
  
