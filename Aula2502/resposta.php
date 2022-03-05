@@ -17,22 +17,39 @@
     $valor2 =$_POST['valor2'];
     echo"valor1 é :  $valor1 e valor2 é: $valor2"; 
     echo "<br/>";
-        $resto1 = $valor1 % 2;
+    echo "Soma: ".($valor1 + $valor2);
+    echo "<br/>";
+    echo "Subtração: ".($valor1 - $valor2);
+    echo "<br/>";
+    echo "Multiplicação: ".($valor1 * $valor2);
+    echo "<br/>";
+    if ($valor1 != 0)
+    {
+         echo "Divisão: ".($valor1 / $valor2);
+      } 
+      else {
+        echo "Não é possível realizar divisão por 0!";
+      }
+    echo "<br/>";
+        echo $resto1 = $valor1 % 2;
         if ($resto1 == 0) {
             echo "O número ".$valor1." é par.";
-        } else {
+        } 
+        else {
             echo "O número ".$valor1." é ímpar.";
         }
         echo "<br>";
         $resto2 = $valor2 % 2;
         if ($resto2 == 0) {
             echo "O número ".$valor2." é par.";
-        } else {
+        } 
+        else {
             echo "O número ".$valor2." é ímpar.";
         }
+        
     ?>
 
-    //mult divisao par soma sub 
+ 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
