@@ -8,15 +8,22 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercicio 2</title>
+    <title>Exercicio 3</title>
   </head>
   <body>
-    <h1>Exercicio 2</h1>
+    <h1>Exercicio 3</h1>
     <?php 
     $a =$_POST['a'];
-    $b =$_POST['b'];
-    echo"O valor recebido foi :  $a O valor do produto é: $b"; 
-    echo "<br/>";
-    $Precodoproduto = ($a * $b);
-    echo "O Preço do produto será: $Precodoproduto"
+    if($a > 10)
+    {
+      echo "O valor é maior que 10 ";
+    }
+    elseif($a == 10)
+    {
+        echo "O Valor é Igual a 10";
+    }
+    else
+    {
+        echo "O Valor é menor que 10 ";
+    }
     ?>

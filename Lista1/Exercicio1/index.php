@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exemplo de Envio de Formulario</title>
+    <title>Exercicio 1</title>
   </head>
   <body class="container">
-    <h1>Exemplo de Envio de Formulario</h1>
+    <h1>Exercicio 1</h1>
 
   <form method="post" action="resultado.php ">
     <div class=" row">
