@@ -17,11 +17,11 @@
     <div class=" row">
         <div class="col"> 
             <label form="a" class="label-control">Informe o Valor Pago: </label>
-            <input type="number" name="a" id="a" class="form-control">
+            <input type="number" name="a" id="a" class="form-control" placeholder="R$ 00,00">
         </div> 
         <div class="col"> 
             <label form="b" class="label-control">Informe o Valor do Produto: </label>
-            <input type="number" name="b" id="b" class="form-control">
+            <input type="number" name="b" id="b" class="form-control" placeholder="R$ 00,00">
         </div>
     </div>
     <div class="row mt-5">
