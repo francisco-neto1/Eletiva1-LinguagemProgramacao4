@@ -14,11 +14,11 @@
     <h1>Exercicio 3</h1>
     <?php 
     $a =$_POST['a'];
-    if($a =+ true)
+    if($a > 0 )
     {
       echo "Valor Postivo";
     }
-    elseif($a =- true)
+    elseif($a < 0)
     {
         echo "Valor Negativo";
     }
