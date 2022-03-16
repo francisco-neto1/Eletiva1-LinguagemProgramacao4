@@ -22,6 +22,9 @@
     {
     echo "Não retornar troco";
     }
+    elseif($Subtracao <= 0){
+    echo "Valor dado é menor que o valor do protudo";
+    }
     else
     {
         echo  "Retornar: ".($Subtracao);
