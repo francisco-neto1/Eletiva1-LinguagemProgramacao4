@@ -22,7 +22,7 @@
     </div>
         <div class="col mt-2">
           <label for="valor<?= $i?>" class="label-control">Informe o valor <?= $i ?>: </label>
-          <input type="number" name="valor" id="valor<?= $i?> " class="form-control" />
+          <input type="number" name="valor<?= $i?>" id="valor<?= $i?> " class="form-control" />
       </div>
       <?php //seleciona oque quer ser repetito
       }

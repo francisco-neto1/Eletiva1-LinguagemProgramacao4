@@ -9,13 +9,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Exercício 1</title>
+    <h4>Exercício 1</h4>
   </head>
   <body class="container">
     <?php 
-    $array = array($_POST['valor'], $_POST['valor2'], $_POST['valor3'], $_POST['valor4'], $_POST['valor5'], $_POST['valor6'], $_POST['valor7'], $_POST['valor8'], $_POST['valor9'], $_POST['valor10']);
-    
-    $r = max($array);
-    
+
+        for($i=1; $i<=10; $i++){
+          $vetor[$i] = $_POST["valor$i"];
+        }
+
+        $posicao = 0;
+        $maior = 0;
+        //var_dump($vetor)
+        foreach($vetor as $chave => $valor){
+            echo "Posicao do vetor: $chave e seu valor é $valor";
+            echo "<br>";
+            if ($valor > $maior){
+              $maior = $valor;
+              $posicao = $chave;
+            }
+        }
+
+        echo "O maior valor é $maior e está na posição $posicao";
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
