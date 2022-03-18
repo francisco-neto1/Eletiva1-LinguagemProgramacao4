@@ -22,15 +22,13 @@
         $maior = 0;
         //var_dump($vetor)
         foreach($vetor as $chave => $valor){
-            echo "Posicao do vetor: $chave e seu valor é $valor";
-            echo "<br>";
-            if ($valor > $maior){
+            if ($valor == $maior){
               $maior = $valor;
               $posicao = $chave;
+              echo "Posicao do vetor: $chave e seu valor é $valor";
             }
         }
 
-        echo "O maior valor é $maior e está na posição $posicao";
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

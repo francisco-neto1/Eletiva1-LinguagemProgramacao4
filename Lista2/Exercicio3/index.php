@@ -7,22 +7,29 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Exercício 3</title>
+    <div class="row">
+
+<?php //para fazer a repetição 
+for ($i = 1; $i <= 10; $i++) {
+?>
+</div>
+  <div class="col mt-2">
+    <label for="valor<?= $i?>" class="label-control">Informe o valor <?= $i ?>: </label>
+    <input type="number" name="valor<?= $i?>" id="valor<?= $i?> " class="form-control" />
+</div>
+<?php //seleciona oque quer ser repetito
+}
+?>
+
+<div class="row mt-5 md-4">
+<div class="col">
+
+<button type="submit" class="btn btn-primary">Enviar</button>
+</div>
+</div>
   </head>
   <body class="container">
-  <h1>Exercício 3</h1>
-  <form method="post" action="resultado.php">
-    <div class="row">
-      <div class="col">
-        <label from="valor" class="label-control">Informe o valor: </label>
-        <input type="number" name="valor" id="valor" class="form-control" />
-      </div>
-      
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <button type="submit" class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
+
   </form>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
