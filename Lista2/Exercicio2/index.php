@@ -11,21 +11,25 @@
   <body class="container">
   <h1>Exercício 2</h1>
   <form method="post" action="resultado.php">
-    <div class="row">
-      <div class="col">
-        <label from="quilo" class="label-control">Informe o valor do quilo do produto: </label>
-        <input type="number" name="quilo" id="quilo" class="form-control" placeholder="R$ 00,00" />
-      </div>
-      <div class="col">
-        <label from="qtd_quilos" class="label-control">Informe a quantidade de quilos do produto: </label>
-        <input type="number" name="qtd_quilos" id="qtd_quilos" class="form-control" placeholder="0 Kg" />
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <button type="submit" class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
+  <div class="row">
+
+<?php //para fazer a repetição 
+for ($i = 1; $i <= 20; $i++) {
+?>
+</div>
+  <div class="col mt-2">
+    <label for="valor<?= $i?>" class="label-control">Informe o valor <?= $i ?>: </label>
+    <input type="number" name="valor<?= $i?>" id="valor<?= $i?> " class="form-control" />
+</div>
+<?php //seleciona oque quer ser repetito
+}
+?>
+<div class="row mt-5 md-4">
+<div class="col">
+<button type="submit" class="btn btn-primary">Enviar</button>
+</div>
+</div>
+
   </form>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
