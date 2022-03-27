@@ -11,53 +11,33 @@
 
   <title>Exercício 2</title>
 </head>
-
 <body class="container">
   <h1>Exercício 2</h1>
   <h4>Informe número inteiro de 1 a 10</h4>
   <form method="post" action="resultado.php">
-<<<<<<< HEAD
-    <div class="">
+    <div class="row g-2">
       <?php
       for ($i = 1; $i <= 20; $i++) {
-
       ?>
-        <div class="col">
-          <label for="valor<?= $i ?>" class="label-control">
-            Informe o valor <?= $i ?>
-          </label>
+        <div class="col-2">
+          <label for="valor<?= $i ?>" class="label-control">Informe o valor <?= $i ?></label>
           <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
         </div>
       <?php
       }
       ?>
     </div>
-    <div class="row">
-      <div class="col mt-2">
+    <div class="row g-4">
+        <div class="col-4">
+          <label for="valorN" class="label-control">Informe o valor a procurar </label>
+          <input type="number" name="valorN" id="valorN" class="form-control" />
+        </div>
+    </div>
+    <div class="row ">
+      <div class="col mt-4">
         <button class="btn btn-primary">Enviar</button>
       </div>
     </div>
-=======
-  <div class="row">
-
-<?php //para fazer a repetição 
-for ($i = 1; $i <= 20; $i++) {
-?>
-</div>
-  <div class="col mt-2">
-    <label for="valor<?= $i?>" class="label-control">Informe o valor <?= $i ?>: </label>
-    <input type="number" name="valor<?= $i?>" id="valor<?= $i?> " class="form-control" />
-</div>
-<?php //seleciona oque quer ser repetito
-}
-?>
-<div class="row mt-5 md-4">
-<div class="col">
-<button type="submit" class="btn btn-primary">Enviar</button>
-</div>
-</div>
->>>>>>> 22263a3e22706c59089ea7ffedc40d8804468412
-
   </form>
 
   <!-- Optional JavaScript; choose one of the two! -->

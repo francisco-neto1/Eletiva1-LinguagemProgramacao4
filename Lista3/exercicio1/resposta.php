@@ -25,14 +25,6 @@
         verificarData($diaIU, $mesIU, $anoIU);
     ?>
 
-    
-
-
-
-
-
-
-
     </body>
 
 
