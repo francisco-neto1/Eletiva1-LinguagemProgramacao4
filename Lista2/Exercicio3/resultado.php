@@ -12,7 +12,7 @@
     <title>Lista 2</title>
 </head>
 <body class="container">
-    <h1>Resultado 3</h1>
+    <h1>Resultado do exercicio 3</h1>
     <?php
     for ($i = 1; $i <= 10; $i++) {
         $vetor[$i] = $_POST["numero$i"];

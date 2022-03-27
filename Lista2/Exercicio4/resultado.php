@@ -13,7 +13,7 @@
 </head>
 
 <body class="container">
-    <h1>Resultado ex 4</h1>
+    <h1>Resultado exercicio 4</h1>
     <div class="border-top border-start">
         <div class="mt-2 ms-2"  >
         <?php
