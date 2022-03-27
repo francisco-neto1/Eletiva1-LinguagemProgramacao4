@@ -12,28 +12,22 @@
   <title>Exercício 2</title>
 </head>
 <body class="container">
-  <h1>Exercício 2</h1>
-  <h4>Informe nome de um aluno(a)</h4>
-  <form method="post" action="resultado.php">
-    <div class="row g-2">
-      <?php
-      for ($i = 1; $i <= 10; $i++) {
-      ?>
-        <div class="col-2">
-          <label for="valor<?= $i ?>" class="label-control">Informe o nome </label>
-          <input type="text" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
-        </div>
-      <?php
-      }
-      ?>
-    </div>
-    <div class="row">
-      <div class="col mt-2">
-        <button class="btn btn-primary">Enviar</button>
-      </div>
-    </div>
-
-  </form>
+  <h1>Resultado do Exercicio 2</h1>
+  <?php
+  for ($x = 1; $x <= 10; $x++) {
+    $array[$x] = $_POST["valor$x"];
+  }
+  function ordenarNome($array)
+  {
+    sort($array);
+    
+    foreach ($array as $chave => $valor) {
+      echo "Aluno em ordem Alfabetica $chave º: $valor";
+      echo "<br>";
+    }
+  } 
+  $ordernar = ordenarNome($array);
+  ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
