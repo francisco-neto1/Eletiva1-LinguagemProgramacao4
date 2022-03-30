@@ -21,7 +21,7 @@
                     </div>
                     <div class="modal-body">
                         <form action="resposta.php" method="POST">
-                            <div class="row">
+                            <div class="row">                                         
                                 <div class="col">
                                     <label for="email" class="label-control">Informe o email</label>
                                     <input type="email" name="email" id="email"class="form-control"/>
