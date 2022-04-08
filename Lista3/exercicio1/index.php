@@ -37,9 +37,6 @@
                 <button type="submit" class="btn btn-warning">Verificar data</button>
             </div>
         </div>
-
-
-
     </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
