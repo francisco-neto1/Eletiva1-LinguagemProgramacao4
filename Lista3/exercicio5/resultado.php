@@ -13,43 +13,6 @@
 
 <body class="container">
   <h1>Resultado ex 5</h1>
-  <div class="row">
-    <div class="col-5 mt-4 ms-5">
-      <table class="table text-center">
-        <thead class="table-primary ">
-          <tr>
-            <th scope="col">IMC</th>
-            <th scope="col">Classificação</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="table-primary" scope="row">abaixo de 18,5</th>
-            <td class="table-secondary">abaixo do peso</td>
-          </tr>
-          <tr>
-            <th class="table-primary" scope="row">entre 18,6 e 24,9</th>
-            <td>Peso ideal(parabéns)</td>
-          </tr>
-          <tr>
-            <th class="table-primary" scope="row">entre 25,0 e 29,9</th>
-            <td class="table-secondary">Levemente acima do peso</td>
-          </tr>
-          <tr>
-            <th class="table-primary" scope="row">entre 30,0 e 34,9</th>
-            <td>Obesidade grau I</td>
-          </tr>
-          <tr>
-            <th class="table-primary" scope="row">entre 35,0 e 39,9</th>
-            <td class="table-secondary">Obesidade grau II(severa)</td>
-          </tr>
-          <tr>
-            <th class="table-primary" scope="row">acima 40</th>
-            <td>Obesidade grau III(mórbida)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
     <div class="col-5 border-start border-top mt-4 ms-5">
       <?php
       $altura = $_POST['alt'];
