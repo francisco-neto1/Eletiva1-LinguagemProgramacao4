@@ -11,7 +11,6 @@
 
     <title>LISTA 1</title>
 </head>
-
 <body class="container">
     <h1>Exercício 2</h1>
     <form method="post" action="/exercicio2-resultado">
@@ -22,14 +21,12 @@
                 </label>
                 <input type="float" name="valor" id="valor" class="form-control" />
             </div>
-
             <div class="col">
                 <label for="preco" class="label-control">
                     Informe a quantidade de quilos consumida:
                 </label>
                 <input type="float" name="qtdeQ" id="qtdeQ" class="form-control" />
             </div>
-
             <div class="row mt-5">
                 <div class="col">
                     <button type="submit" class="btn btn-success">Calcular</button>
@@ -37,7 +34,6 @@
             </div>
         </div>
     </form>
-
     <div class="col-2 mt-3">
         <?php
         if (isset($valor))
