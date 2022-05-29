@@ -6,13 +6,10 @@ namespace Aluno\Francisco\Controller;
 
 class Ex3
 {
-
     public static function exibir()
     {
         require_once("../src/View/exercicio3.php");
     }
-
-
     public static function exibirResultado()
     {
         $valor = $_POST['valor'];

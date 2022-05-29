@@ -9,9 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>LISTA 1</title>
+    <title>Lista 1</title>
 </head>
-
 <body class="container">
     <h1>Exercício 3</h1>
     <form method="post" action="/exercicio3-resultado">
@@ -29,7 +28,6 @@
             </div>
         </div>
     </form>
-
     <div class="col-2 mt-3">
         <?php
         if (isset($result))
