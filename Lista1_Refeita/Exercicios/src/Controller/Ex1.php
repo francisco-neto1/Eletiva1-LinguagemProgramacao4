@@ -11,8 +11,6 @@ class Ex1
     {
         require_once("../src/View/exercicio1.php");
     }
-
-
     public static function exibirResultado()
     {
         $valorP = $_POST['valorP'];
