@@ -9,9 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>LISTA 1</title>
+    <title>Lista 1</title>
 </head>
-
 <body class="container">
     <h1>Exercício 5</h1>
     <form method="post" action="/exercicio5-resultado">
@@ -22,28 +21,24 @@
                 </label>
                 <input type="float" name="nota1" id="nota1" class="form-control" />
             </div>
-
             <div class="col">
                 <label for="nota2" class="label-control">
                     Informe a segunda nota:
                 </label>
                 <input type="float" name="nota2" id="nota2" class="form-control" />
             </div>
-
             <div class="col">
                 <label for="nota3" class="label-control">
                     Informe a terceira nota:
                 </label>
                 <input type="float" name="nota3" id="nota3" class="form-control" />
             </div>
-
             <div class="col">
                 <label for="nota4" class="label-control">
                     Informe a quarta nota:
                 </label>
                 <input type="float" name="nota4" id="nota4" class="form-control" />
             </div>
-
             <div class="row mt-5">
                 <div class="col">
                     <button type="submit" class="btn btn-success">Calcular</button>
@@ -51,7 +46,6 @@
             </div>
         </div>
     </form>
-
     <div class="col-3 mt-3">
         <?php
         if (isset($result))
