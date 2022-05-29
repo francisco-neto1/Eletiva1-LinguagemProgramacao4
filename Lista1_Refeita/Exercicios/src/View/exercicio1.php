@@ -11,10 +11,8 @@
 
     <title>Lista 1</title>
 </head>
-
 <body class="container">
     <h1>Exercicio 1</h1>
-
     <form method="POST" action="/exercicio1-resultado">
         <div class="row">
             <div class="col">
