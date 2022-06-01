@@ -9,6 +9,10 @@ class ProdutoController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_produto.php";
     }
+
+    public static function abrir(){
+        require_once "../src/View/listar_cliente.php";
+    }
     
 
     public static function inserirProduto(){

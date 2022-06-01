@@ -32,7 +32,7 @@ $router->get('/produtos/novo',
 'Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioInserir');
 
 $router->post('/produtos/inserir',
-'Aluno\ProjetoPhp\Controller\ClientesController::inserirProduto');
+'Aluno\ProjetoPhp\Controller\ProdutoController::inserirProduto');
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
 $result = $router->handler();
