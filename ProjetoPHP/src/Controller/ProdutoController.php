@@ -9,6 +9,7 @@ class ClientesController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_produto.php";
     }
+    
 
     public static function inserirProduto(){
         $produto = new Produtos();

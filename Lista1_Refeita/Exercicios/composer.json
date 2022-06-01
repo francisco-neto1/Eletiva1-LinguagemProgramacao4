@@ -1,14 +1,14 @@
 {
-    "name": "aluno/natanael",
+    "name": "aluno/francisco",
     "autoload": {
         "psr-4": {
-            "Aluno\\Natanael\\": "src/"
+            "Aluno\\Francisco\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "natan986",
-            "email": "juniornatan986@gmail.com"
+            "name": "francisco-neto1",
+            "email": "Franciscon3t02018@hotmail.com"
         }
     ],
     "require": {}
