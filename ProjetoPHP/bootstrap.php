@@ -29,7 +29,7 @@ $router->post('/cliente/inserir',
 'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
 $router->get('/produtos/novo',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+'Aluno\ProjetoPhp\Controller\ProdutoController::abrirFormularioInserir');
 
 $router->post('/produtos/inserir',
 'Aluno\ProjetoPhp\Controller\ClientesController::inserirProduto');
