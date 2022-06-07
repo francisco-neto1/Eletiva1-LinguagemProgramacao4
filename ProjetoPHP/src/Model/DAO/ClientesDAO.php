@@ -1,9 +1,8 @@
 <?php
 
-namespace Aluno\Natanael\Model\DAO;
+namespace Aluno\ProjetoPhp\Model\DAO;
 
-use Aluno\Natanael\Model\Entity\Clientes;
-use Aluno\Natanael\Model\DAO\Conexao;
+use Aluno\ProjetoPhp\Model\Entity\Clientes;
 
 class ClientesDAO
 {
@@ -13,9 +12,9 @@ class ClientesDAO
         try {
             $sql = "INSERT INTO `clientes`(`nome`, `email`, `idade`) VALUES (:nome, :email, :idade)";
             $p = Conexao::conectar()->prepare($sql);
-            $p->bindValue(":nome", $c->getNome());
-            $p->bindValue(":email", $c->getEmail());
-            $p->bindValue(":idade", $c->getIdade());
+            $p -> bindValue(":nome", $c->getNome());
+            $p -> bindValue(":email", $c->getEmail());
+            $p -> bindValue(":idade", $c->getIdade());
             return $p->execute();
         } catch (\Exception $e) {
             return false;
@@ -25,12 +24,12 @@ class ClientesDAO
     public function alterar(Clientes $c)
     {
         try {
-            $sql = "UPDATE `clientes` SET `nome`=:nome,`email`=:email,`idade`=:idade WHERE id = :id";
+            $sql = "UPDATE `clientes` SET `nome`= :nome,`email`= :email,`idade`= :idade WHERE id = :id";
             $p = Conexao::conectar()->prepare($sql);
-            $p->bindValue(":nome", $c->getNome());
-            $p->bindValue(":email", $c->getEmail());
-            $p->bindValue(":idade", $c->getIdade());
-            $p->bindValue(":id", $c->getId());
+            $p -> bindValue(":nome", $c->getNome());
+            $p -> bindValue(":email", $c->getEmail());
+            $p -> bindValue(":idade", $c->getIdade());
+            $p -> bindValue(":id", $c->getId());
             return $p->execute();
         } catch (\Exception $e) {
             return false;
@@ -40,10 +39,10 @@ class ClientesDAO
     public function excluir($id)
     {
         try {
-            $sql = "DELETE FROM `clientes` WHERE id = :id";
+            $sql = "DELETE FROM `clientes` WHERE id=:id";
             $p = Conexao::conectar()->prepare($sql);
-            $p->bindValue(":id", $id);
-            return $p->execute();
+            $p -> bindValue(":id", $id);
+            return $p -> execute();
         } catch (\Exception $e) {
             return false;
         }
@@ -62,11 +61,10 @@ class ClientesDAO
     public function consultarPorId($id)
     {
         try {
-            $sql = "SELECT * FROM clientes WHERE id = :id";
+            $sql = "SELECT * FROM clientes WHERE id=:id";
             $p = Conexao::conectar()->prepare($sql);
-            $p->bindValue(":id", $id);
-            $p->execute();
-            return $p->fetch();
+            $p -> bindValue(":id", $id);
+            return $p -> execute();
         } catch (\Exception $e) {
             return false;
         }

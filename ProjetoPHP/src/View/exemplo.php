@@ -9,34 +9,34 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hello, word!</title>
 </head>
 
 <body class="container">
     <h1>Exemplo</h1>
-
     <form method="POST" action="/exemplo-resultado">
         <div class="row">
-            <div class="col">
+            <div class="col-5">
                 <label class="label-control">Valor 1</label>
                 <input class="form-control" name="valor1" type="text" />
             </div>
-            <div class="col">
+            <div class="col-5">
                 <label class="label-control">Valor 2</label>
                 <input class="form-control" name="valor2" type="text" />
             </div>
         </div>
-        <div class="row">
-            <div class="col mt-3">
-                <button type="submit" class="btn btn-primary">Ok</button>
+        <div class="row mt-3">
+            <div class="col-5">
+                <button type="submit" class="btn btn-primary">Ok</label>
             </div>
         </div>
     </form>
 
     <?php
-    if (isset($soma))
-        echo "O valor da soma é $soma";
+        if (isset($soma))
+            echo "<br/>O valor da soma é: $soma";
     ?>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

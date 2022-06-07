@@ -1,46 +1,39 @@
 <?php
 
-namespace Aluno\Natanael\Controller;
+namespace Aluno\ProjetoPhp\Controller;
 
-use Aluno\Natanael\Model\DAO\ClientesDAO;
-use Aluno\Natanael\Model\Entity\Clientes;
+use Aluno\ProjetoPhp\Model\DAO\ClientesDAO;
+use Aluno\ProjetoPhp\Model\Entity\Clientes;
 
-class ClientesController
-{
-
-    public static function abrirFormularioInserir()
-    {
+class ClientesController{
+    public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_cliente.php";
     }
 
-    public static function abrirFormularioAlterar($params)
-    {
+    public static function abrirFormularioAlterar($params){
         $dao = new ClientesDAO();
-        $resultado = $dao->consultarPorID($params[1]);
-        require_once "../src/View/Alterar_cliente.php";
+        $resultado = $dao->consultarPorId($params[1]);
+        require_once "../src/View/alterar_cliente.php";
     }
 
-    public static function abrirListarClientes()
-    {
+    public static function abrirListaClientes(){
         $dao = new ClientesDAO();
         $resultado = $dao->consultar();
         require_once "../src/View/listar_clientes.php";
     }
 
-
-    public static function inserirCliente()
-    {
+    public static function inserirCliente(){
         $cliente = new Clientes();
-        $cliente->setEmail($_POST['email']);
-        $cliente->setIdade($_POST['idade']);
-        $cliente->setNome($_POST['nome']);
+        $cliente -> setEmail($_POST['email']);
+        $cliente -> setIdade($_POST['idade']);
+        $cliente -> setNome($_POST['nome']);
         $dao = new ClientesDAO();
-        if ($dao->inserir($cliente)) {
+        if($dao -> inserir($cliente)){
             $resposta = true;
-        } else {
+        }else{
             $resposta = false;
         }
-        ClientesController::abrirListarClientes();
+        ClientesController::abrirListaClientes();
     }
 
     public static function editarCliente($params){
@@ -55,9 +48,9 @@ class ClientesController
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListarClientes();
+        ClientesController::abrirListaClientes();
     }
-
+    
     public static function excluirCliente($params){
         $dao = new ClientesDAO();
         if ($dao->excluir($params[1])){
@@ -65,6 +58,12 @@ class ClientesController
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListarClientes();
+        ClientesController::abrirListaClientes();
     }
+
 }
+
+
+
+
+

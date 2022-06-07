@@ -1,52 +1,37 @@
 <?php
+namespace Aluno\ProjetoPhp\Model\Entity;
 
-namespace Aluno\Natanael\Model\Entity;
-
-class Clientes
-{
-
+class Clientes{
     private $id;
     private $nome;
     private $email;
     private $idade;
 
-    public function getId()
-    {
+    public function getId(){
         return $this->id;
     }
-
-    public function setId($id)
-    {
+    public function setId($id){
         $this->id = $id;
     }
 
-    public function getNome()
-    {
+    public function getNome(){
         return $this->nome;
     }
-
-    public function setNome($nome)
-    {
+    public function setNome($nome){
         $this->nome = $nome;
     }
-
-    public function getEmail()
-    {
+    
+    public function getEmail(){
         return $this->email;
     }
-
-    public function setEmail($email)
-    {
+    public function setEmail($email){
         $this->email = $email;
     }
-
-    public function getIdade()
-    {
+    
+    public function getIdade(){
         return $this->idade;
     }
-
-    public function setIdade($idade)
-    {
+    public function setIdade($idade){
         $this->idade = $idade;
     }
 }

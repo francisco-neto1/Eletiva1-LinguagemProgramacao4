@@ -1,14 +1,16 @@
 {
-    "name": "aluno/natanael",
+    "name": "aluno/projeto-php",
+    "description": "Este eh um projeto usando PHP e MySQL",
+    "type": "project",
     "autoload": {
         "psr-4": {
-            "Aluno\\Natanael\\": "src/"
+            "Aluno\\ProjetoPhp\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "natan986",
-            "email": "juniornatan986@gmail.com"
+            "name": "G-Sotti",
+            "email": "gabriel_sotti@hotmail.com"
         }
     ],
     "require": {}
