@@ -1,26 +1,30 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\DAO;
+namespace Aluno\Natanael\Model\DAO;
 
-use Aluno\ProjetoPhp\Model\Entity\Clientes;
+use Aluno\Natanael\Model\Entity\Clientes;
+use Aluno\Natanael\Model\DAO\Conexao;
 
-class ClientesDAO{
+class ClientesDAO
+{
 
-    public function inserir(Clientes $c){
-        try{
+    public function inserir(Clientes $c)
+    {
+        try {
             $sql = "INSERT INTO `clientes`(`nome`, `email`, `idade`) VALUES (:nome, :email, :idade)";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":nome", $c->getNome());
             $p->bindValue(":email", $c->getEmail());
             $p->bindValue(":idade", $c->getIdade());
             return $p->execute();
-        } catch(\Exception $e){
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function alterar(Clientes $c){
-        try{
+    public function alterar(Clientes $c)
+    {
+        try {
             $sql = "UPDATE `clientes` SET `nome`=:nome,`email`=:email,`idade`=:idade WHERE id = :id";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":nome", $c->getNome());
@@ -28,40 +32,43 @@ class ClientesDAO{
             $p->bindValue(":idade", $c->getIdade());
             $p->bindValue(":id", $c->getId());
             return $p->execute();
-        } catch(\Exception $e){
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function excluir($id){
-        try{
+    public function excluir($id)
+    {
+        try {
             $sql = "DELETE FROM `clientes` WHERE id = :id";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":id", $id);
             return $p->execute();
-        } catch(\Exception $e){
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function consultar(){
-        try{
+    public function consultar()
+    {
+        try {
             $sql = "SELECT * FROM clientes";
             return Conexao::conectar()->query($sql);
-        } catch(\Exception $e){
+        } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function consultarPorId($id){
-        try{
+    public function consultarPorId($id)
+    {
+        try {
             $sql = "SELECT * FROM clientes WHERE id = :id";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":id", $id);
-            return $p->execute();
-        } catch(\Exception $e){
+            $p->execute();
+            return $p->fetch();
+        } catch (\Exception $e) {
             return false;
         }
     }
-
 }

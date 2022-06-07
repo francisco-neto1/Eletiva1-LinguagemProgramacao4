@@ -1,16 +1,19 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\DAO;
+namespace Aluno\Natanael\Model\DAO;
 
 use PDO;
 
-class Conexao{
+class Conexao
+{
 
-    public static function conectar(){
-        return 
-        new PDO("mysql:host=localhost; dbname=projetophp",
-                    "root",
-                    "");
+    public static function conectar()
+    {
+        return
+            new PDO(
+                "mysql:host=localhost; dbname=projetophp",
+                "root",
+                ""
+            );
     }
-
 }
